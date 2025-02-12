@@ -37,7 +37,7 @@ Este projeto implementa um sistema de reconhecimento facial utilizando Transfer 
 2. Execute o script de treinamento: `python treinar_modelo.py`
 
 3. Execute o script de reconhecimento facial: `python reconhecer_faces.py`
-
+3.1. O modelo treinado será salvo no arquivo `modelo_reconhecimento_facial.h5`.
 ## Estrutura de pastas
 
 - `imagens_rosto`: Pasta com as imagens para treinamento
