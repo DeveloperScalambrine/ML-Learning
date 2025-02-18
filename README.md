@@ -1,19 +1,36 @@
-# Transfer Learning usando Colab
+# Sistema de Assistência Virtual com PLN em Python
 
-O **Transfer Learning** é uma técnica que reutiliza um modelo de rede neural pré-treinado em um novo problema, acelerando o processo de treinamento e melhorando a precisão em tarefas com dados limitados. No **Google Colab**, é possível implementar Transfer Learning de maneira eficiente e gratuita, aproveitando a infraestrutura de GPU.
+Este repositório contém um sistema de assistência virtual desenvolvido em Python, utilizando Processamento de Linguagem Natural (PLN) para interagir com o usuário através de voz e texto.
 
-## Passo a Passo para Treinamento de ML no Colab:
+## Funcionalidades
 
-1. **Importo as bibliotecas necessárias**: Primeiro, começo importando as bibliotecas essenciais como TensorFlow, Keras e outras bibliotecas para manipulação de dados.
+O sistema possui dois módulos principais:
 
-2. **Carrego o Dataset**: Faço o upload do meu dataset ou uso datasets públicos. Para carregar as imagens, costumo usar o `tensorflow.keras.preprocessing.image.ImageDataGenerator`.
+1.  **Text-to-Speech (TTS):** Transforma texto em áudio, permitindo que o sistema "fale" com o usuário.
+2.  **Speech-to-Text (STT):** Transforma a fala do usuário em texto, possibilitando que o sistema "entenda" os comandos e perguntas.
 
-3. **Carrego o Modelo Pré-Treinado**: Em seguida, carrego um modelo pré-treinado como o InceptionV3, disponível no Keras, para aproveitar o aprendizado adquirido com grandes volumes de dados.
+Além disso, o sistema oferece as seguintes funções automatizadas, acionadas por comandos de voz:
 
-4. **Treino o Modelo**: Utilizo o gerador de dados para alimentar o modelo durante o treinamento. Ajusto os hiperparâmetros, como o número de épocas, conforme necessário para melhorar os resultados.
+*   **Pesquisa no Wikipedia:** Abre a página do Wikipedia com o termo pesquisado.
+*   **Abertura do Youtube:** Abre o Youtube no navegador padrão do usuário.
 
-5. **Avalio o Modelo**: Após o treinamento, avalio o modelo usando um conjunto de validação para verificar sua precisão e desempenho. Se necessário, ajusto os parâmetros para melhorar os resultados.
+## Requisitos
 
-6. **Salvo o Modelo Treinado**: Por fim, salvo o modelo treinado para uso futuro, podendo carregá-lo novamente para fazer previsões em novos dados ou até mesmo para implementar em produção.
+Para executar o sistema, você precisará ter o Python instalado em seu computador, além das seguintes bibliotecas:
 
-Com esses passos, consigo aproveitar o poder do Transfer Learning para resolver problemas complexos de aprendizado de máquina no Colab de maneira rápida e eficiente.
+*   `speech_recognition`
+*   `gTTS`
+*   `wikipedia`
+*   `webbrowser`
+
+Você pode instalar as bibliotecas utilizando o pip:
+
+```bash
+pip install speech_recognition, gTTS, wikipedia, webbrowser
+```
+Licença
+Este projeto está licenciado sob a licença MIT.
+
+Desenvolvido por: Carlos Henrique Scalambrine de Souza
+
+Data: 18/02/2025
